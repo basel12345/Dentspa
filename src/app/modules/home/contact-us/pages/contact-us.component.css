@@ -1,0 +1,25 @@
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    transition: all .3s ease-in-out;
+    background-color: white;
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
+}
+
+.btn:hover {
+    background-color: #17a2b8;
+    color: white;
+}

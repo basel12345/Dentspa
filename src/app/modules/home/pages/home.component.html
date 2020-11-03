@@ -1,0 +1,153 @@
+<header>
+    <div class="row">
+        <div class="headWeb col-6">
+            <h2>Proffesional
+              <br>
+               Family Health Care</h2>
+            <span>CREATE YOUR MEDICAL WEBSITE USING JEVELIN</span>
+            <div class="row icon">
+              <i class="fas fa-heartbeat"></i>
+              <i class="fas fa-ambulance"></i>
+              <i class="fas fa-stethoscope"></i>
+            </div>
+        </div>
+    </div>
+    <img [src]="cover" alt="cover">
+</header>
+
+<div class="container first">
+    <div class="row">
+        <div class="col-md-4 col-12 cards">
+            <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12"><i class="fas fa-eye"></i></div>
+                  </div>
+                  <h5>EMERGENCY SERVICE</h5>
+                  <p class="card-text">Aliquam erat volutpat. Nullam imperdiet sapien felis, non lobortis odio mattis in. Quisque dapibus aliquet dictum. Integer dapibus ullamcorper est, ac .
+                  </p>
+                  <a class="card-link btn"  type="button" routerLink="read-more">See more</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12 cards">
+            <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12"><i class="fas fa-id-card-alt"></i></div>
+                    <div class="col-12"><h5 class="card-title">DO YOU WANT TO <br> MAKE AN <br> APPOINTMENT
+                    </h5></div>
+                  </div>
+                  <p class="card-text">Aliquam erat volutpat. Nullam imperdiet sapien felis, non lobortis odio mattis in. Quisque dapibus aliquet dictum.
+                  </p>
+                  <a class="card-link btn"  type="button"  routerLink="contact-us">Contact US</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12 cards">
+            <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12"><i class="fas fa-calendar-check"></i></div>
+                    <div class="col-12"><h5 class="card-title">Card title</h5></div>
+                  </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a class="card-link btn"  type="button" routerLink='appointment'>Online-Appointment</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container about">
+  <div class="row">
+    <div class="col-md-6 col-12">
+      <img [src]="aboutUS" alt="about">
+    </div>
+    <div class="col-md-6 col-12">
+      <span><strong>About</strong> Dentspa Clinic</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci ex, pulvinar nec finibus ut, cursus eget libero. In dictum sem non sapien condimentum aliquet. Nulla facilisi. Mauris efficitur dolor dolor, id porta nulla interdum vitae.
+      </p>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Medical Consulting
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, urna non pellentesque sollicitudin, felis lorem porta nibh, suscipit lacinia ante augue venenatis nibh. Nullam tristique ornare lorem at
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Laboratory Analysis
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, urna non pellentesque sollicitudin, felis lorem porta nibh, suscipit lacinia ante augue venenatis nibh. Nullam tristique ornare lorem at
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Diagnostic Clinic
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra, urna non pellentesque sollicitudin, felis lorem porta nibh, suscipit lacinia ante augue venenatis nibh. Nullam tristique ornare lorem at
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="background"[ngStyle]="{backgroundImage:'url(assets/images/Rectangle-827-copy-2.jpg)'}">
+  <div class="container">
+    <h1>How we can help you</h1>
+    <p>READ MORE ABOUT OUR SERVICES</p>
+    <div class="services">
+     <div class="row">
+      <div class="col-md-3 col-12 cards">
+        <img [src]="cardiology" alt="">
+        <h3>Cardiology</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      </div>
+      <div class="col-md-3 col-12 cards">
+        <img [src]="neurology" alt="">
+        <h3>Neurology
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      </div>
+      <div class="col-md-3 col-12 cards">
+        <img [src]="oncology" alt="">
+        <h3>Cancer care</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      </div>
+      <div class="col-md-3 col-12 cards">
+        <img [src]="chemistry" alt="">
+        <h3>Laboratory</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+

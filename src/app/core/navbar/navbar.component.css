@@ -1,0 +1,105 @@
+.header {
+    width: 100%;
+}
+
+.icons {
+    padding-top: 18px;
+}
+
+
+.icons i {
+    color: #999;
+    display: inline-block;
+    font-size: 20px;
+    transition: all .5s ease;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    text-align: center;
+    margin-left: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.icons i:hover {
+    background-color: #9ff1fd;
+    transform: rotate(360deg);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.date {
+    margin-right: 15px;
+}
+
+.call:after,
+.date:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #d7d7d7;
+}
+
+.call i,
+.date i {
+    font-size: 34px;
+    padding-top: 16px;
+}
+
+.navbar-expand-lg {
+    background-color: transparent !important;
+    box-shadow: 0px 4px 13px 1px rgba(0,0,0,.11);
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+
+nav a {
+    transition: all .3s ease-in-out;
+    border-bottom: 3px solid white;
+    margin-right: 10px;
+    padding-right:  15px !important;
+    padding-left:  15px !important;
+    font-weight: bolder;
+}
+
+nav a:hover,
+nav a:hover {
+    color: #9ff1fd !important;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.nav2 {
+    background-color: white !important;
+}
+
+.nav2 a {
+    transition: all .3s ease-in-out;
+    margin-right: 10px;
+    padding-right:  15px !important;
+    padding-left:  15px !important;
+}
+
+
+nav img {
+    width: 50px;
+ }
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+nav .logo {
+    border: none;
+}
+
+nav .logo:hover {
+    background-color: transparent;
+    border-radius: 0%;
+}
