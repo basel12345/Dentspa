@@ -68,7 +68,7 @@ nav a {
 }
 
 nav a:hover,
-nav a:hover {
+.active {
     color: #9ff1fd !important;
     background-color: white;
     cursor: pointer;
@@ -103,3 +103,17 @@ nav .logo:hover {
     background-color: transparent;
     border-radius: 0%;
 }
+
+#sidebar {
+  width: 500px;
+  height: 500px;
+  display: none;
+  background-color: white;
+}
+
+#service:hover ~ #sidebar {
+  display: block;
+}
+
+
+

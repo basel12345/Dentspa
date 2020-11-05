@@ -1,6 +1,8 @@
 .footer {
     padding-top: 60px;
-    background-color: #f8f9fa;
+    background: #92eaed;
+    color: white;
+    padding-bottom: 60px;
 }
 
 .footer p,
@@ -10,4 +12,27 @@
 
 .footer a {
     display: block;
+    color: white;
 }
+
+.btn {
+  transition: all .3s ease-in-out;
+  color: black;
+  border-radius: 50px;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: #17a2b8;
+  color: white;
+  float: right;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 2px solid #17a2b8;
+  color: black;
+}
+
+input {
+  border-radius: 19px;
+}
+

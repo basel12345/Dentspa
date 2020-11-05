@@ -1,14 +1,14 @@
-<div class="container" style="margin-top: 50px;">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-6">
-        <h1 class="display-4">{{doctor.name}}</h1>
-        <p> Age: {{doctor.age}}</p>
-        <hr class="my-4">
-        <p>{{doctor.paragraph}}</p>
-      </div>
-      <div class="col-6">
-        <img style="width: 100%;" [src]="doctor.image" [alt]="doctor.name">
+<div class="container">
+  <h1>All dentistry specialities</h1>
+  <hr>
+  <div class="row doctors">
+    <div class="col-md-4 col-12 doctor" *ngFor="let res of Doctors">
+      <div [routerLink]="['profile/',res.id]">
+        <img [src]="res.image" [alt]="res.name">
+        <div class="info">
+          <p>{{res.name}}</p>
+          <p>{{res.age}}</p>
+        </div>
       </div>
     </div>
   </div>

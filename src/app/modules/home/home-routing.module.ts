@@ -10,7 +10,7 @@ const routes: Routes = [
     {
       path: 'read-more',
       loadChildren: () => import("./read-more/read-more.module").then(m => m.ReadMoreModule)
-    }, 
+    },
     {
       path: 'contact-us',
       loadChildren: () => import("./contact-us/contact-us.module").then(m => m.ContactUsModule)
@@ -20,11 +20,11 @@ const routes: Routes = [
       loadChildren: () => import('./online-appointment/online-appointment.module').then(m => m.OnlineAppointmentModule)
     },
     {
-      path: 'department/:id',
-      loadChildren: () => import('./department/department.module').then(m => m.DepartmentModule)
+      path: 'gallary',
+      loadChildren: () => import('./gallary/gallary.module').then(m => m.GallaryModule)
     },
     {
-      path: 'doctor/:id',
+      path: 'doctors',
       loadChildren: () => import('./doctors/doctors.module').then(m => m.DoctorsModule)
     }
 ];

@@ -5,7 +5,11 @@ import { DoctorsComponent } from './pages/doctors.component';
 const routes: Routes = [
     {
         path: '',
-        component: DoctorsComponent
+        component: DoctorsComponent,
+    },
+    {
+      path: 'profile/:id',
+      loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
     }
 ];
 

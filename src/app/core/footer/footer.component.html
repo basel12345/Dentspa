@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-12">
-                <h2>DENTSPA</h2>
+                <h3>DENTSPA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                    Iure, repellat. Sunt ipsum doloremque reprehenderit laborum
                    rem consequuntur ipsa debitis quisquam similique quae amet dignissimos iste
@@ -10,28 +10,41 @@
 
             </div>
             <div class="col-md-4 col-12">
-                <h2>Useful Links</h2>
-                <a>Home</a>
-                <a>Our Doctors</a>
-                <a>Gallery</a>
-                <a>Contact US</a>
+                <h3>Useful Links</h3>
+                <a routerLink="/home" routerLinkActive="active">Home</a>
+                <a routerLink="/home/doctors" routerLinkActive="active">Our Doctors</a>
+                <a routerLink="/home/gallary" routerLinkActive="active">Gallery</a>
+                <a routerLinkActive="active">Contact US</a>
                 <a>About US</a>
             </div>
             <div class="col-md-4 col-12">
-                <h2>Subscribe to our newsletter</h2>
+                <h3>Subscribe to our newsletter</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Iure, repellat. Sunt ipsum doloremque reprehenderit laborum</p>
-                <form>
+                <form [formGroup]="SubscribeForm" (ngSubmit)="onSubmit()">
                     <div class="form-group">
-                        <label for="exampleInputName">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName">
+                        <input type="text" placeholder="Name" class="form-control" id="exampleInputName" formControlName="name"
+                        [ngClass]="{'is-invalid': submitted && f.name.errors}">
+                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                            <div *ngIf="f.name.errors.required">
+                                Name is required
+                            </div>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email"
+                        [ngClass]="{'is-invalid': submitted && f.email.errors}">
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                          <div *ngIf="f.email.errors.required">
+                              Email is required
+                          </div>
+                          <div *ngIf="f.email.errors.email">
+                              Email must be a valid email address
+                          </div>
+                      </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>    
+                    <button type="submit" class="btn">Send</button>
+                </form>
             </div>
         </div>
     </div>
