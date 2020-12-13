@@ -53,11 +53,12 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" id="service">Our Services</a>
+        <a class="nav-link" routerLink="/home/services" routerLinkActive="active">Our Services</a>
         <a class="nav-link" routerLink="/home/doctors" routerLinkActive="active">Our Doctors</a>
         <a class="nav-link" routerLink="/home/gallary" routerLinkActive="active">Gallary</a>
-        <a class="nav-link">Contact Us</a>
-        <a class="nav-link">About Us</a>
+        <a class="nav-link" routerLink="/home/contact-us" routerLinkActive="active">Contact Us</a>
+        <a class="nav-link" routerLink="/home/about-us" routerLinkActive="active">About Us</a>
+        <a class="nav-link" (click)="logOut()">Log Out</a>
       </div>
     </div>
   </div>
@@ -73,11 +74,12 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" >Our Services</a>
+        <a class="nav-link" routerLink="/home/services" routerLinkActive="active">Our Services</a>
         <a class="nav-link" routerLink="/home/doctors" routerLinkActive="active">Our Doctors</a>
         <a class="nav-link" routerLink="/home/gallary" routerLinkActive="active">Gallary</a>
-        <a class="nav-link">Contact Us</a>
-        <a class="nav-link">About Us</a>
+        <a class="nav-link" routerLink="/home/contact-us" routerLinkActive="active">Contact Us</a>
+        <a class="nav-link" routerLink="/home/about-us" routerLinkActive="active">About Us</a>
+        <a class="nav-link" (click)="logOut()">Log Out</a>
       </div>
     </div>
   </div>

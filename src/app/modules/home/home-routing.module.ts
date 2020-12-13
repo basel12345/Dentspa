@@ -8,7 +8,7 @@ const routes: Routes = [
         component: HomeComponent
     },
     {
-      path: 'read-more',
+      path: 'services',
       loadChildren: () => import("./read-more/read-more.module").then(m => m.ReadMoreModule)
     },
     {
@@ -26,6 +26,10 @@ const routes: Routes = [
     {
       path: 'doctors',
       loadChildren: () => import('./doctors/doctors.module').then(m => m.DoctorsModule)
+    },
+    {
+      path: 'about-us',
+      loadChildren: () => import('./about-us/about-us.module').then(m => m.AboutUsModule)
     }
 ];
 

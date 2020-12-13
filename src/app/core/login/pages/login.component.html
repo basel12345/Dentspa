@@ -1,0 +1,52 @@
+
+
+<body>
+  <div class="containers">
+    <div class="forms-containers">
+      <div class="signin-signup">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="input-field">
+            <input type="email" formControlName="email" placeholder="Email"
+            [ngClass]="{'is-invalid': submitted && f.email.errors}">
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">
+                Email is required
+              </div>
+              <div *ngIf="f.email.errors.email">
+                Email must be a valid email address
+              </div>
+            </div>
+          </div>
+          <div class="input-field">
+            <input type="password" formControlName="password" placeholder="Password"
+            [ngClass]="{'is-invalid': submitted && f.password.errors}">
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">
+                Password is required
+              </div>
+              <div *ngIf="f.password.errors.minlength">
+                Password must be more than 8 letters
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="panels-containers">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>New here ?</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            ex ratione. Aliquid!
+          </p>
+          <button (click)="signUp()" class="btn transparent" id="sign-up-btn">
+            Sign up
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

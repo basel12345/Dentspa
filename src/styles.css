@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20%;
+  padding-left: 50%;
+}
+
+.loader .bar {
+  width: 10px;
+  height: 8px;
+  background:#9ff1fd ;
+  margin: 2px;
+  animation: bar 1s infinite linear;
+}
+.loader .bar:nth-child(1) {
+  animation-delay: 0s;
+}
+.loader .bar:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.loader .bar:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes bar {
+  0% {
+    transform: scaleY(1) scaleX(0.5);
+  }
+  50% {
+    transform: scaleY(10) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(0.5);
+  }
+}

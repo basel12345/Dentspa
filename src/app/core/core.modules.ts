@@ -1,12 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CoreRoutingModule } from './core-routing.modules';
 
 
 @NgModule({
   declarations: [
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
+    CoreRoutingModule
   ],
   exports: [
   ],

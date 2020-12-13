@@ -15,27 +15,27 @@ export class HomeComponent implements OnInit {
   neurology ='assets/images/neurology.png';
   oncology ='assets/images/oncology.png';
   chemistry ='assets/images/chemistry.png';
-  
+
   Department: Department[] = [
-    { 
+    {
         name: 'Orthodontics',
         paragraph: 'Some quick example text to build on the card title and make up the bulk of the card',
         id: 1,
         image: 'assets/images/download.jpg'
     },
-    { 
+    {
         name: 'Theth load',
         paragraph: 'Some quick example text to build on the card title and make up the bulk of the card',
         id: 2,
         image: 'assets/images/download.jpg'
     },
-    { 
+    {
         name: 'Extractions',
         paragraph: 'Some quick example text to build on the card title and make up the bulk of the card',
         id: 3,
         image: 'assets/images/download.jpg'
     },
-    { 
+    {
         name: 'Extractions',
         paragraph: 'Some quick example text to build on the card title and make up the bulk of the card',
         id: 4,
@@ -43,21 +43,21 @@ export class HomeComponent implements OnInit {
     }
 ]
 Doctors: Doctors[] = [
-  { 
+  {
       name: 'doctors 1',
       paragraph: 'Some quick example text to build on the card title and make up the bulk of the card',
       id: 1,
       age: 26,
       image: 'assets/images/0ebb6a8f0c2850697532805d09d4ff10e838a74b-200x200.jpg'
   },
-  { 
+  {
       name: 'doctors 2',
       paragraph: 'Some quick example text to build on the card title and make up the bulk of the card',
       id: 2,
       age: 24,
       image: 'assets/images/0ebb6a8f0c2850697532805d09d4ff10e838a74b-200x200.jpg'
   },
-  { 
+  {
       name: 'doctors 3',
       paragraph: 'Some quick example text to build on the card title and make up the bulk of the card',
       id: 3,

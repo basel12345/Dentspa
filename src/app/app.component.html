@@ -1,6 +1,6 @@
-<navbar-root></navbar-root>
+<navbar-root *ngIf="checkUrl"></navbar-root>
 <router-outlet></router-outlet>
-<footer-root></footer-root>
+<footer-root *ngIf="checkUrl"></footer-root>
 
 <div class="float-sm">
   <div class="fl-fl float-fb">
@@ -28,3 +28,4 @@
     <a href="" target="_blank">Follow us!</a>
   </div>
 </div>
+

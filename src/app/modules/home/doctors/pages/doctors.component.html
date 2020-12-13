@@ -2,14 +2,14 @@
   <h1>All dentistry specialities</h1>
   <hr>
   <div class="row doctors">
-    <div class="col-md-4 col-12 doctor" *ngFor="let res of Doctors">
-      <div [routerLink]="['profile/',res.id]">
+    <ng-container *ngFor="let res of Doctors">
+      <div class="col-md-4 col-12 doctor" [routerLink]="['profile/',res.id]">
         <img [src]="res.image" [alt]="res.name">
         <div class="info">
           <p>{{res.name}}</p>
           <p>{{res.age}}</p>
         </div>
       </div>
-    </div>
+    </ng-container>
   </div>
 </div>
